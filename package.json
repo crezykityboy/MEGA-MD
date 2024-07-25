@@ -9,7 +9,7 @@
   "author": "OWNER DILA",
   "license": "ISC",
   "dependencies": {
-    "@crezykityboy/baileys": "",
+    "@crezykityboy/baileys": "https://github.com/crezykityboy/MEGA-MD/tree/main",
     "@adiwajshing/keyed-db": "^0.2.4",
     "acrcloud": "^1.4.0",
     "axios": "^1.6.8",
