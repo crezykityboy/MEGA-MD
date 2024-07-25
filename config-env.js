@@ -17,16 +17,16 @@ global.blockJids= process.env.BLOCK_JID || "null"
 global.DATABASE_URL = process.env.DATABASE_URL || ""
 
 global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
-global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
-global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643";
-global.website=process.env.GURL || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643" ; 
+global.github=process.env.GITHUB|| "https://github.com/crezykityboy/MEGA-MD";
+global.gurl  =process.env.GURL  || "";
+global.website=process.env.GURL || "" ; 
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
-global.caption = process.env.CAPTION || global.caption || "ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ" 
+global.caption = process.env.CAPTION || global.caption || "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ONER MEGA AND DEXTER²²¹-ᴍᴅ" 
 
 
 global.devs = "923184474176" // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "94768859286";
 
 
 
@@ -47,16 +47,16 @@ global.waPresence= process.env.WAPRESENCE ||  "null" ; // 'unavailable' | 'avail
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
-global.readmessage = process.env.READ_MESSAGE || "false"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
+global.readcmds = process.env.READ_COMMAND || "true"
+global.readmessage = process.env.READ_MESSAGE || "true"
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "MEGA,923xxxxxxxx";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
-global.save_status = process.env.AUTO_SAVE_STATUS || "false"
-global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923xxxxxxxx";
+global.read_status = process.env.AUTO_READ_STATUS || "true"
+global.save_status = process.env.AUTO_SAVE_STATUS || "true"
+global.save_status_from =  process.env.SAVE_STATUS_FROM  || "mega,923xxxxxxxx";
+global.read_status_from =  process.env.READ_STATUS_FROM  ||  "94768859286";
 
 global.api_smd = "https://api-smd.onrender.com" //  || "https://api-smd-1.vercel.app" // expires
 global.scan = "https://suhail-md-vtsf.onrender.com";
@@ -76,8 +76,8 @@ module.exports = {
  
   author : process.env.PACK_AUTHER|| "",
   packname: process.env.PACK_NAME || "",
-  botname : process.env.BOT_NAME  || "sᴜʜᴀɪʟ-ᴍᴅ",
-  ownername:process.env.OWNER_NAME|| "Suhail",
+  botname : process.env.BOT_NAME  || "mega-ᴍᴅ",
+  ownername:process.env.OWNER_NAME|| "owner sl",
 
 
   errorChat : process.env.ERROR_CHAT || "",
@@ -131,14 +131,14 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
 
 // ========================= [ Disables in V.1.2.8 ] ===============================\\  
   //style : process.env.STYLE || "2",  // put '1' & "2" here to check bot styles
-  //readmessage:process.env.READ_MESSAGE|| "false",
+  //readmessage:process.env.READ_MESSAGE|| "true",
   //warncount: process.env.WARN_COUNT || 3,
   //userImages:process.env.USER_IMAGES|| "text",  // SET IMAGE AND VIDEO URL FOR BOT MENUS 
   //disablepm: process.env.DISABLE_PM || "false",
   //MsgsInLog: process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
   //readcmds:process.env.READ_COMMANDS|| "false", 
   //alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
-  //read_status: process.env.AUTO_READ_STATUS || "false",
-  //save_status: process.env.AUTO_SAVE_STATUS || "false",
+  //read_status: process.env.AUTO_READ_STATUS || "true",
+  //save_status: process.env.AUTO_SAVE_STATUS || "true",
   //aitts_Voice_Id : process.env.AITTS_ID || "37",
   //ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY  || "",
